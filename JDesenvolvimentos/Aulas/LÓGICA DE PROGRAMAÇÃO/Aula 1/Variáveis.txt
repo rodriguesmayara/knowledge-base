@@ -1,0 +1,9 @@
+// variáveis -> podem varias o seu conteúdo
+	cadeia      pode receber valores alfanuméricos entre aspas duplas. Quando utilizado números é concatenado.
+	caracter    pode recer valor alfanumérico com no máximo tamanho 1 e entre aspas simples  
+	inteiro     valores numéricos inteiros, positivos, negativos ou zero.
+	real        valores numéricos inteiros ou fracionários (casas decimais) positivos, negativos ou zero.
+	logico      apenas valores binários [verdadeiro/ falso] 
+
+// constantes -> NÃO PODEM ALTERAR SEU CONTEÚDO 
+	const cadeia MSG_SICESSO = "Cadastro realizado com sucesso"

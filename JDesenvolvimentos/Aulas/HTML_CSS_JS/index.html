@@ -3,57 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Aula HTML - CSS - JS</title>
 </head>
 <body>
+    <!-- Menu de Navegação das Páginas -->
     <header>
-        <h1 id="topo">Conteúdo de Página HTML</h1>
-    </header>
-    <hr>
-    <nav>
-        <ul type="I">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="imagens.html">Imagens</a></li>
-            <li><a href="listas.html">Listas</a></li>
-         <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>    
-    <hr>
+        <div id="logo">
+            <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/4ga5w36f.png" alt="devcursos">
+        </div>
+        <div id="menu">
+            <nav>
+            <ul>
+                <li><a href="index.html" class="ativo">Página Inicial</a></li>
+                <li><a href="#">Cursos</a>"
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav> 
+        </div>
+        <div id="acesso">
+            <button id="btnAcesso"> Inscreva-se </button>
+        </div>
+    </header>   
     <main>
-        <section>
-            <h2>TAGS</h2>
-            <article>
-                <h3>Tags básicas e avançadas</h3>
-                <p>Aqui estaremos verificando algumas tags que são de nível básico e também de nível avançado.</p>
-            </article>
-        </section>
-        <hr>
-        <section>
-            <h2>IMAGENS</h2>
-            <article>
-                <h3>Internas</h3>
-                    <p>Aqui são as imagens que estão ao próprio site. <a href="imagens.html">Clique aqui</a> para ir para página desse assunto.</p>
-                <h3>Externas</h3>
-                <p>Aqui são as imagens que <br> estamos pegando de outro site</p> 
-            </article>
-        </section>
-        <hr>
-        <section>
-            <h2>Links (Hiperlinks)</h2>
-            <article>
-                <h3>Internos</h3>
-                    <h4>Âncoras</h4>
-                        <p>Aqui estão os links que apontam para pontos do mesmo site. Para entender melhor <a href="#topo"> clique aqui </a>. </p>
-                    <h4>Outras Páginas</h4>
-                        <p>Aqui estão os links que apontam para páginas do mesmo site por exemplo a página de <a href="/contato.html"> contato </a>.</p>
-                <h3>Externos</h3>
-                <p>Aqui estão os links que apontam para páginas de outros sites por exemplo a página de <a href="https://www.google.com/" target="_blank"> Google </a>.</p>
-            </article>
-        </section>
-        <hr>
+        <div id="banner">
+            <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/ver cursos.png" alt="Shared image">
+        </div>
+        <div id="cursos">
+            <div id="títuloCursos">
+                <h2>Nossos Cursos</h2>
+                <h3>Conheça nossos cursos e comece hoje mesmo.</h3>
+            </div>
+        </div>
+        <div id="conteudoPrincipal">
+            <div class="card">
+                <div>
+                    <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/html5.jpg" alt="">
+                </div>
+                <div>
+                    <span id="nomeCurso"> HTML Básico </span>
+                </div>
+                <div>
+                    <span id="descricaocurso">Aprenda a criar páginas web com HTML de forma prática e descomplicada. </span>
+                </div>
+                <div>
+                    <button id="btnAcesso">Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/css.png" alt="">
+                </div>
+                <div>
+                    <span id="nomeCurso"> CSS Básico </span>
+                </div>
+                <div>
+                    <span id="descricaocurso">Estilize suas páginas e crie interfaces modernas e responsivas. </span>
+                </div>
+                <div>
+                    <button id="btnAcesso">Saiba mais</button>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/javascript.jpg" alt="">
+                </div>
+                <div>
+                    <span id="nomeCurso"> Javascript Básico </span>
+                </div>
+                <div>
+                    <span id="descricaocurso">Adicione interatividade aos seus projetos e dê vida às suas páginas. </span>
+                </div>
+                <div>
+                    <button id="btnAcesso">Saiba mais</button>
+                </div>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <p> &copy; 2024 Todos os direitos reservados</p>
+        <p> &copy; 2026 JDesenvolvimento - Todos os direitos reservados</p>
     </footer>
+
 </body>
 </html>

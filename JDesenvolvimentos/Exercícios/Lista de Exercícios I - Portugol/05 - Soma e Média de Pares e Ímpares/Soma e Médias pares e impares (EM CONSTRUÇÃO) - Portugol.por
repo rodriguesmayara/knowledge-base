@@ -1,6 +1,8 @@
 programa
 {
-	inteiro valor1, valor2, valor3, valor4, valor5, valor6
+	inteiro valor1, valor2, valor3, valor4, valor5, valor6
+	inteiro par1=0, par2=0, par3=0, par4=0, par5=0, par6=0
+	inteiro imp1=0, imp2=0, imp3=0, imp4=0, imp5=0, imp6=0
 	
 	funcao inicio()
 	{
@@ -19,44 +21,59 @@ programa
 		escreva("Digite um número inteiro: ")
 		leia(valor6)
 
-		//Processamento e classificações dos valores
-		//
-
-		inteiro x1 = valor1, x2 = valor2, x3 = valor3, x4 = valor4, x5 = valor5, x6 = valor6
-		inteiro y1 = valor1, y2 = valor2, y3 = valor3, y4 = valor4, y5 = valor5, y6 = valor6
-		
+		//Processamento e classificações dos valores//
 		se (valor1%2 == 0)
-			valor1 = x16
+		{ 
+			valor1 = par1
+		}
 		senao 
-			valor1 = y1
-		//
+		{
+			valor1 = imp1
+		}
 		se (valor2%2 == 0)
-			valor2 = x2 
+		{ 
+			valor2 = par2
+		}
 		senao 
-			valor2 = y2
-		//
+		{
+			valor2 = imp2 
+		}
 		se (valor3%2 == 0)
-			valor3 = x3
+		{ 
+			valor3 = par3
+		}
 		senao 
-			valor3 = y3
-		//
+		{
+			valor3 = imp3 
+		}
 		se (valor4%2 == 0)
-			valor4 = x4
+		{ 
+			valor4 = par4
+		}
 		senao 
-			valor4 = y4
-		//
-		se (valor5%2 == 0)
-			valor5 = x5
+		{
+			valor4 = imp4
+		}
+		se (valor1%2 == 0)
+		{ 
+			valor5 = par5
+		}
 		senao 
-			valor5 = y5
-		//
-		se (valor6%2 == 0)
-			valor6 = x6
+		{
+			valor5 = imp5 
+		}
+		se (valor1%2 == 0)
+		{ 
+			valor6 = par6
+		}
 		senao 
-			valor6 = y6
+		{
+			valor6 = imp6
+		}
+		
 
 		//Saída - Entrega
-		escreva("A soma dos números pares é ",(x1 + x2 + x3 + x4 + x5 + x6), " e a soma dos números ímpares é " ,(y1 + y2 + y3 + y4 + y5 + y6), ".")
+		escreva("A soma dos números pares é ", (par1 + par2 + par3 + par4 + par5 + par6), " e a soma dos números ímpares é " , (imp1 + imp2 + imp3 + imp4 + imp5 + imp6), ".")
 					
 	}
 }
@@ -65,7 +82,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 794; 
+ * @POSICAO-CURSOR = 747; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

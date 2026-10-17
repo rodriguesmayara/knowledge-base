@@ -1,6 +1,6 @@
 programa
 {
-	cadeia nome
+	cadeia nome
 	real nota, valorproduto
 	inteiro aluno
 	logico estado
@@ -28,14 +28,6 @@ programa
 		escreva("Seu nome é: ",nome," .\n")
 		escreva("Você tem  ",aluno," alunos e a média de notas deles são:",nota,".\n")
 		escreva("O preço do produto é ",valorproduto," seu pagamento foi ",estado," e seu código é 00125\n ")
-		 
-		
-
-
-
-
-
-
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -43,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 640; 
+ * @POSICAO-CURSOR = 762; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

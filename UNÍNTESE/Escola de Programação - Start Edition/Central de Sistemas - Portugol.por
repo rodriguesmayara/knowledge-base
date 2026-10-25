@@ -5,7 +5,7 @@ programa
 	real peso, altura, imc
 	inteiro quantidade, i, quantidadeAlunos
 	real numero, soma, media, maior, menor, temperatura_C, temperatura_F
-	real notas [100]
+	real notas [50]
 	
 	funcao inicio()
 	{
@@ -96,10 +96,10 @@ programa
 
 				caso 4:
 					//Coleta de dados do aluno (Entrada)
-					escreva("Quantos Alunos compõe a turma? (Máximo 100) \n")
+					escreva("Quantos Alunos compõe a turma? (Máximo 50) \n")
 					leia(quantidadeAlunos)
 					soma = 0
-					para (i = 0; i < quantidade; i++)
+					para (i = 0; i < quantidadeAlunos; i++)
 					{
 						escreva("Nota do aluno ", i + 1, ":")
 						leia (notas [i])
@@ -160,7 +160,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2933; 
+ * @POSICAO-CURSOR = 291; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

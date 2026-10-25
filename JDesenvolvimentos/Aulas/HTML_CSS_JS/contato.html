@@ -10,7 +10,7 @@
    <!-- Menu de Navegação das Páginas -->
     <header>
         <div id="logo">
-            <img src="/JDesenvolvimentos/Aulas/HTML_CSS_JS/imagens/4ga5w36f.png" alt="devcursos">
+            <img src="/Aulas/HTML_CSS_JS/imagens/devcursos.png" alt="devcursos">
         </div>
         <div id="menu">
             <nav>
@@ -22,15 +22,20 @@
         </nav> 
         </div>
         <div id="acesso">
-            <button id="btnAcesso"> Inscreva-se </button>
+            <button id="btnAcesso" class="botao"> Inscreva-se </button>
         </div>
     </header>   
     <main>
-        <section>   
-            <article>
-                <p>Esta é a página de contato.</p>
-            </article>
-        </section>
+        <form action=""class = "formContato">
+            <legend>Formulário de Contato</legend>
+            <input type="text" name="nome" placeholder="Seu Nome" class="campoForm" required>
+            <input type="email" name="email" placeholder="Seu E-mail" class="campoForm" required>
+            <textarea name="mensagem" placeholder="Por favor, deixe sua Mensagem :)" class="campoForm mensagemForm" rows="8" required></textarea>
+            <div class="controleFrom">
+                <input type="reset" value="Limpar" class="botao cancela">
+                <button class="btEnviar botao confirma">Enviar</button>
+            </div>
+        </form>
     </main>
     <footer>
         <p> &copy; 2026 JDesenvolvimento - Todos os direitos reservados</p>

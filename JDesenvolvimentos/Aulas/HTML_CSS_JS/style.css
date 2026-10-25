@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 header{
@@ -9,7 +9,7 @@ header{
     color: #FFFFFF;
     padding: 5px;
     display: flex;
-    align-items: flex-end;
+    align-items: stretch;
 }
 
 a{
@@ -28,8 +28,19 @@ li{
     margin: 5px;
 }
 
-#logo {
+.cursos{
+    display: none;
+    position: absolute;
+}
+
+ul li:hover .cursos{
+    display: block;
+}
+
+#logo{
     width: 20%;
+    margin: 0;
+    padding: 0;
 }
 
 #logo img{
@@ -42,7 +53,8 @@ li{
     align-items: center;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+    margin: 0;
+    padding: 0;
 }
 
 #acesso{
@@ -50,23 +62,60 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#btnAcesso {
-    background-color: #0033CC;
-    border:none;
+#btnAcesso{
+    background-color: #0033CC;    
+}
+
+#btnInformacao{
+    background-color: #0033CC;    
+}
+
+#btnInformacao:hover{
+   text-decoration: underline;    
+}
+
+.botao{
+    border: none;
     padding: 10px;
-    color: #FFFFFF;
     cursor: pointer;
     border-radius: 5px;
+    margin: 2px;
+    color: #FFFFFF;
+}
+
+.confirma{
+    background-color: #09d82f;
+}
+
+.cancela{
+    background-color: #e0220c;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
     bottom: 0;
-    position: absolute;
+    left: 0;
+    position: sticky;
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
     background-color: #0000BB;
     color: #FFFFFF;
     height: 40px;
@@ -81,19 +130,19 @@ footer{
 }
 
 #cursos{
-    display:flex;
+    display: flex;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px;
 }
 
 #cursos h2{
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
 #cursos h3{
-    display:flex;
+    display: flex;
     justify-content: center;
     color: #555555;
 }
@@ -106,11 +155,12 @@ footer{
 
 .card{
     margin: 20px;
-    background-color: #DDDDDD;
+    background-color: #EEEEEE;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
     max-width: 33%;
 }
@@ -123,7 +173,37 @@ footer{
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#descricaocurso{
+
+#descricaoCurso{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #555555;
+}
+
+.formContato{
+    width: 40%;
+    border: 1px solid #cdcdcd;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px #10141f;
+}
+
+.campoForm{
+    outline: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.mensagemForm{
+    resize: none;
+}
+
+.controleFrom{
+    margin: 10px;
+    display: flex;
+    justify-content: end;
 }

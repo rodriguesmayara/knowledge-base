@@ -15,11 +15,10 @@ programa
 			{
 				escreva("Meia Entrada, total a ser pago: R$ 17,50")
 			} senao
-				se ( idade >= 12 ou idade <= 60)
-				{
-					escreva("Você é estudante? Digite [1] = para sim e [2] para não")
-					leia(estudante)
-				} senao
+			
+				escreva("Você é estudante? Digite [1] = para sim e [2] para não\n")
+				leia(estudante)
+				
 					se ( estudante == 1 )
 					{
 						escreva("Meia Entrada, total a ser pago: R$ 17,50")
@@ -36,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 646; 
+ * @POSICAO-CURSOR = 362; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

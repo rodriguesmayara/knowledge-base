@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>DevCursos</title>
 </head>
+<script>
+    console.log('log de algo que aconteceu')
+    console.warn('Algo que chama atenção')
+    console.error('Ocorreu um erro que precisa ser tratado')
+    console.info('Info de algo que aconteceu')
+    console.clear()
+    console.log('log de algo que aconteceu')
+    console.warn('Algo que chama atenção')
+    console.error('Ocorreu um erro que precisa ser tratado')
+    console.info('Info de algo que aconteceu')
+
+    //Criei uma constante chamada NOME com valor Jhonni
+    const NOME = 'Jhonni'
+    console.log(NOME)
+
+    //Variáveis
+    v_nome = 'Mayara'
+    console.log(v_nome)
+
+    var nome = 'May'
+    console.log(nome)
+
+    let numero = 5
+    console.log(numero)
+
+    if(1 == 1){
+        var valor = 3
+        console.log(valor)
+        let valor2 = 2
+        console.log(valor2)
+    }
+
+    console.log(valor)
+    //console.log(valor2) - não funciona pq o let tá dentro das chaves
+    console.clear()
+
+    let a = 2
+    let b = 3
+    if (a == b)
+        console.log('Iguais')
+    else
+        console.log('Diferentes')
+
+    //se comparação, retorno_verdeiro, retorno_falso
+    //operadores ternários
+    console.log(a == b ? 'Iguais' : 'Diferentes')
+    console.log(1==1 ? (a == 1 ? 'Verdadeiro' : 'Falso') : 'Diferente')
+
+    //alert('mayara')
+    //let usuario = prompt('Informe seu nome: ')
+    //console.log(usuario)
+    //let cadastrar = confirm(usuario + ' deseja continuar?')
+    //console.log(cadastrar)
+    //alert(cadastrar ? 'cadastro efetuado!' : 'cadastro não efetuado')
+
+    //let usuario = prompt('Informe seu nome: ')
+    //if (usuario != "")
+    //{
+    //    if (usuario != null ){
+    //        let cadastrar = confirm(usuario + ' deseja continuar?')
+    //        console.log(cadastrar)
+    //        alert(cadastrar ? 'cadastro efetuado!' : 'cadastro não efetuado')
+    //    }
+    //}
+
+    //and -> && e or -> ||
+    //if ((usuario !== '') && (usuario != null)){
+    //let cadastrar = confirm(usuario + ' deseja continuar?')
+    //console.log(cadastrar)
+    //alert(cadastrar ? 'cadastro efetuado!' : 'cadastro não efetuado')
+    //}
+
+
+</script>
 <body>
     <!-- Menu de Navegação das Páginas -->
     <header>
@@ -54,7 +129,7 @@
                     <span id="descricaocurso">Aprenda a criar páginas web com HTML de forma prática e descomplicada. </span>
                 </div>
                 <div>
-                     <button id="btnInformacao" class="botao"><a style="color: #FFFFFF;" href="/html.html"> Saiba Mais </a></button>
+                     <button id="btnInformacao" class="botao" onclick="alert('Deseja saber mais hobre HTML')"><a style="color: #FFFFFF;" href="/html.html"> Saiba Mais </a></button>
                 </div>
             </div>
             <div class="card">
